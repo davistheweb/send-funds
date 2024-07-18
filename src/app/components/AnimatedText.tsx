@@ -1,7 +1,7 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import AccountModal from "./AccountModal";
+import { useEffect, useRef, useState } from "react";
 
 const AnimatedText = () => {
   const textRef = useRef<HTMLDivElement>(null);
@@ -25,7 +25,7 @@ const AnimatedText = () => {
     );
   }, []);
 
-  const text = isSent ? "Thanks for sending!" : "Do me small funds";
+  const text = isSent ? "Thanks for sending!" : "Do me small funds, please!";
   const letters = text.split("").map((char, index) => (
     <span key={index} className="letter inline-block">
       {char === " " ? "\u00A0" : char}
@@ -73,6 +73,7 @@ const AnimatedText = () => {
       )}
       {showCryingGif && (
         <div className="mt-4">
+          <p>Please nah</p>
           <img src="/images/crying.gif" alt="Crying GIF" />
         </div>
       )}
@@ -85,7 +86,7 @@ const AnimatedText = () => {
       <p className="absolute bottom-4">
         with ❤️ and sapa. {""}
         <a
-          href="https://github.com/dtechoracle/send-funds"
+          href="https://github.com/victorola-coder/send-funds"
           className="text-blue-300"
         >
           Repo

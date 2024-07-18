@@ -30,13 +30,13 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose, onSent }) => {
           <h2 className="text-xl font-semibold text-[#141517]">
             Account Information
           </h2>
-          <p>Send the money here, make i see food chop</p>
+          <p>Send the money here, make i see food chop, thanks</p>
           <div className="mt-12 space-y-2 text-left">
             <p className="flex justify-between">
-              <span>Name:</span> <span>Ezekiel Jeremiah</span>
+              <span>Name:</span> <span>Victor Olatunji</span>
             </p>
             <p className="flex justify-between">
-              <span>Account Number:</span> <span>8127982163</span>
+              <span>Account Number:</span> <span className="font-semibold">9075789680</span>
             </p>
             <p className="flex justify-between">
               <span>Bank Name:</span> <span>Opay</span>
