@@ -59,7 +59,7 @@ const AnimatedText = () => {
           </button>
           <button
             className="bg-red-500 text-white px-4 py-2 m-2 rounded"
-            onClick={handleNoClick}
+            onClick={handleYesClick}
           >
             No
           </button>
