@@ -25,7 +25,7 @@ const AnimatedText = () => {
     );
   }, []);
 
-  const text = isSent ? "Thanks for sending!" : "send funds, please!";
+  const text = isSent ? "Thanks for saving me!" : "send funds, please!";
   const letters = text.split("").map((char, index) => (
     <span key={index} className="letter inline-block">
       {char === " " ? "\u00A0" : char}
@@ -59,7 +59,8 @@ const AnimatedText = () => {
           </button>
           <button
             className="bg-red-500 text-white px-4 py-2 m-2 rounded"
-            onClick={handleNoClick}
+title="I don't take no for an answer"
+            onClick={handleYesClick}
           >
             No
           </button>
